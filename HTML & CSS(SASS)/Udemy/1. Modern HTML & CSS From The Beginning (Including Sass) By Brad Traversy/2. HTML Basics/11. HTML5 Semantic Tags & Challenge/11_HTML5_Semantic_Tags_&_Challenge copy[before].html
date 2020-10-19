@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11. HTML5 Semantic Tags & Challenge</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+      line-height: 1.4;
+    }
+    #header {
+      margin-bottom: 15px;
+      background: #333;
+      color: #fff;
+      padding: 10px;
+    }
+    #main {
+      float: left;
+      width: 69%;
+    }
+    #sidebar {
+      float: right;
+      width: 29%;
+    }
+    .clr {
+      clear: both;
+    }
+    #footer {
+      background: #333;
+      color: #fff;
+      padding: 10px;
+    }
+    .text-center {
+      display: block;
+      text-align: center;
+    }
+    .card {
+      border: 1px solid #ddd;
+      background: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Header -->
+  <div id="header" class="card">
+    <h1>My Website</h1>
+    <p>Just Another Website</p>
+  </div>
+
+  <!-- Mian Content (left) -->
+  <div id="main">
+
+    <!-- Welcome Section -->
+    <div id="welcome" class="card">
+      <h2>Welcome to our Website</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quam molestiae labore fugit, eos nisi tempora aliquid iure architecto, inventore reprehenderit eius deleniti. At cum minima fuga amet eius? Ex distinctio explicabo earum adipisci mollitia amet ut quod, asperiores delectus fugiat porro rem. Consequuntur quidem eos reiciendis labore atque officia?</p>
+      <a href="#" class="text-center">Click For More</a>
+    </div>
+
+    <!-- Blog Section -->
+    <div class="blog">
+      <h2>From Our Blog</h2>
+      <!-- Article One -->
+      <div class="article">
+        <h3>Article One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora hic molestiae assumenda fugiat illum reiciendis veritatis et. Tempore voluptate at officiis, impedit, aspernatur debitis voluptas ut praesentium qui libero eius!</p>
+      </div>
+      <!-- Article Two -->
+      <div class="article">
+        <h3>Article Two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eos architecto, reiciendis eius iure libero vitae, ex, earum aliquam esse magni? Ex perspiciatis fugit officia fuga nulla illo! Quam, itaque?</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidebar (right) -->
+  <div id="sidebar" class="card">
+    <h3>Navigation</h3>
+    <!-- Navigation -->
+    <ul id="main-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <hr>
+    <h3>Contact us</h3>
+    <ul>
+      <li><strong>Address:</strong>50 Main st, Boston MA</li>
+      <li><strong>Phone:</strong>(555) 555-656565</li>
+      <li><strong>Email:</strong>me@something.com</li>
+    </ul>
+  </div>
+
+  <div class="clr"></div>
+
+  <div id="footer">
+    <p class="text-center">Copyright &copy; My Website 2020</p>
+  </div>
+
+</body>
+</html>

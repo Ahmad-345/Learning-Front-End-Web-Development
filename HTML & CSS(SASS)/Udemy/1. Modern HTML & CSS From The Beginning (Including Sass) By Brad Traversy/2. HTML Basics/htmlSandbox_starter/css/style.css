@@ -1,0 +1,32 @@
+#top__nav {
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    height: 24px;
+    color: #fff;
+}
+
+#top__nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#top__nav a:hover {
+    text-decoration: underline;
+}
+
+#container {
+    width: 600px;
+    margin: 10px auto 10px auto;
+    border: 2px dotted #333;
+    background-color: red;
+}
+
+#content {
+    padding: 10px;
+}
+
+footer {
+    font-size: .7em;
+    text-align: right;
+}
