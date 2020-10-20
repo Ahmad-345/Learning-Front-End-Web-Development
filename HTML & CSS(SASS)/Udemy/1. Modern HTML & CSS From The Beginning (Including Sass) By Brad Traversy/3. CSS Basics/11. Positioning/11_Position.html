@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11. CSS Positioning</title>
+
+  <!-- Internal CSS -->
+  <style>
+    
+    body {
+      height: 5000px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+
+    .container {
+      width: 500px;
+      height: 500px;
+      background: #333;
+      position: relative;
+
+      z-index: 2; /* the heigher the value the more it will close to user on screen */
+    }
+
+    #box-1 {
+      position: static; /* Default */
+
+      position: relative; /* Relative form original place */
+      top: 50px;
+      left: 50px; 
+      z-index: 1;
+      z-index: 3;
+
+      background-color: #ff0000;
+    }
+    #box-2 {
+      position: absolute;
+      top: 100px;
+      left: 100px;
+
+      background-color: #ffff00;
+    }
+
+    #box-3 {
+      position: absolute;
+      bottom: 100px;
+      right: 100px;
+
+      background-color: #008000;
+    }
+    #box-4 {
+      position: fixed; /* always stay on top of the page and fixed at certain place*/
+
+      background-color: #0000ff;
+    }
+    #box-5 {
+      position: sticky; /* stay on top of the page on pre-defined position*/
+      top: 0;
+
+      z-index: -1; /* we can change its appearance */
+            
+      background-color: #ffa500;
+    }
+
+  </style>
+
+</head>
+<body>
+  <div id="box-1" class="box"></div>
+
+  <div class="container">
+    <div id="box-2" class="box"></div>
+    <div id="box-3" class="box"></div>
+  </div>
+
+  <div id="box-4" class="box"></div>
+  <div id="box-5" class="box"></div>
+</body>
+</html>

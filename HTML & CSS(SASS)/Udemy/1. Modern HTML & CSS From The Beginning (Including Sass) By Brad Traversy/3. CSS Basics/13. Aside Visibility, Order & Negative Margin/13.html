@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>13. Aside Visibility, Order & Negative Margin</title>
+
+  <!-- Internal CSS -->
+  <style>
+
+    /* .hallo {
+      color: red;
+    } */
+
+    h1 {
+      /* display: none; */  /* remove the element from the DOM */
+      /* visibility: hidden; */  /* Hiddes the element on the DOM but still stays there */
+      color: blue !important;
+    } 
+
+    .hallo {
+      color: red; /* takes affect due to order of precedence */
+
+      /*  Note:__ order of precedence is important however targeting a 
+          class is going to overide the actual element even if an element,
+          selected with class is placed before the actual element in CSS rules,
+          to counteract this we use '!important' flag  after that the declations
+          we want to take affect.  */
+
+      margin-top: -30px;
+      margin-left: -30px;
+    }
+
+  </style>
+
+</head>
+<body>
+  <h1 class="hallo">Hallo World</h1>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima veritatis vel doloremque maxime hic ipsam.</p>
+</body>
+</html>
